@@ -58,13 +58,12 @@ a {
     padding-left: 64px;
 }
 
-.promo_line_img {
-    height: 92px;
-    width: 12px;
-}
-
 .promo__content {
     margin-left: 16px;
+    border-left-style: solid;
+    border-left-width: 12px;
+    border-left-color: #F16D7F;
+    padding-left: 16px;
 }
 
 .promo__heading {
