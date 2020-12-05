@@ -311,6 +311,10 @@ color: #222222;
     outline: none;
 }
 
+.form_button {
+    display: inline-flex;
+}
+
 .footer_button {
     height: 49px;
     background: #F16D7F;
@@ -321,7 +325,6 @@ color: #222222;
     padding: 15px;
     border-radius: 0 20px 20px 0;
     border: none;
-    margin-left: -4px;
 }
 
 .footer_button:focus {
