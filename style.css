@@ -35,10 +35,14 @@ a {
 }
 
 .promo {
-    /* padding-left: calc(50% - 800px);
-    padding-right: calc(50% - 800px);  */
+    padding-left: calc(50% - 800px);
+    padding-right: calc(50% - 800px); 
     background: rgba(113, 103, 105, 0.08);
     display: flex;
+}
+
+.promo_box {
+    padding-right: 0;
 }
 
 .promo__left {
@@ -46,8 +50,8 @@ a {
 }
 
 .promo__img {
-    width: 70%; /*Оставить 50% если в promo поставить паддинги */
-    margin-left: 200px;
+    width: 100%; /*Оставить 100% если в promo поставить паддинги */
+    /* margin-left: 200px; */
 }
 
 .promo__right {
@@ -64,6 +68,7 @@ a {
     border-left-width: 12px;
     border-left-color: #F16D7F;
     padding-left: 16px;
+    width: 500px;
 }
 
 .promo__heading {
@@ -82,6 +87,22 @@ a {
 
 .promo__text_color {
     color: #F16D7F;;
+}
+
+.submenu {
+    list-style-type: none;
+    background-color: #FFFFFF;
+    width: 232px;
+    padding-top: 37px;
+    padding-left: 34px;
+    position: absolute;
+    display: none;
+    right: 0;
+    top: 0;
+}
+
+.menu:hover .submenu {
+    display: block;
 }
 
 .catalog {
@@ -162,12 +183,39 @@ color: #222222;
 
 .fetured__item {
     background: #F8F8F8;
-    flex-grow: 1;
     flex-basis: 360px;
+    position: relative;
 }
 
 .fetured__img {
     width: 100%;
+}
+
+.fetured__item:hover .fetured__img {
+    filter: brightness(50%);
+}
+
+.fetured__item:hover .cart_add {
+    display: flex;
+}
+
+.cart_add {
+    position: absolute;
+    top: 188px;
+    left: 111px;
+    width: 139px;
+    height: 44px;
+    border: 1px solid white;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.text_hover {
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    margin-left: 11px;
 }
 
 .fetured_content {
@@ -181,6 +229,7 @@ color: #222222;
     font-size: 13px;
     line-height: 16px;
     color: #000000;
+    margin-bottom: 12px;
 }
 
 .text_img {
@@ -206,6 +255,11 @@ color: #222222;
     text-align: center;
     padding: 14px 38px;
     border: 1px solid #FF6A6A;
+}
+
+.button:hover {
+    background: #F16D7F;
+    color: #FFFFFF;
 }
 
 .footer {
@@ -345,12 +399,30 @@ color: #222222;
     color: #FBFBFB;
 }
 
+.social_img {
+    fill: inherit;
+    stroke: inherit;
+}
+
 .footer_social_img {
     background: #FFFFFF;
     padding-top: 9px;
     padding-right: 9px;
     padding-left: 9px;
     padding-bottom: 7px;
+}
+
+.facebook_img {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.footer_social_img:hover{
+    background: #F16D7F;
+}
+
+.footer_social_img:hover .svg {
+    filter: invert(.9);
 }
 
 .footer_social_img:not(:last-child) {
