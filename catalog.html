@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
         rel="stylesheet">
-    <title>Index</title>
+    <title>Catalog</title>
 </head>
 
 <body>
@@ -23,33 +23,6 @@
                 <a href="#">
                     <img src="img/menu.svg" alt="">
                 </a>
-                <ul class="submenu">
-                    <li class="submenu_headind">MENU</li>
-                    <li class="submenu_heading_list">MAN</li>
-                    <ul class="submenu_list">
-                        <li class="submenu_list_mini">Accessories</li>
-                        <li class="submenu_list_mini">Bags</li>
-                        <li class="submenu_list_mini">Denim</li>
-                        <li class="submenu_list_mini">T-Shirts</li>
-                    </ul>
-                    <li class="submenu_heading_list">WOMAN</li>
-                    <ul class="submenu_list">
-                        <li class="submenu_list_mini">Accessories</li>
-                        <li class="submenu_list_mini">Jackets & Coats</li>
-                        <li class="submenu_list_mini">Polos</li>
-                        <li class="submenu_list_mini">T-Shirts</li>
-                        <li class="submenu_list_mini">Shirts</li>
-                    </ul>
-                    <li class="submenu_heading_list">KIDS</li>
-                    <ul class="submenu_list">
-                        <li class="submenu_list_mini">Accessories</li>
-                        <li class="submenu_list_mini">Jackets & Coats</li>
-                        <li class="submenu_list_mini">Polos</li>
-                        <li class="submenu_list_mini">T-Shirts</li>
-                        <li class="submenu_list_mini">Shirts</li>
-                        <li class="submenu_list_mini">Bags</li>
-                    </ul>
-                </ul>
             </div>
             <a href="#">
                 <img class="header__acc" src="img/acc.svg" alt="acc">
@@ -59,55 +32,83 @@
             </a>
         </nav>
     </header>
-    <section class="promo promo_box">
-        <div class="promo__left">
-            <img class="promo__img" src="img/promo_img.png" alt="">
-        </div>
-        <article class="promo__right">
-            <div class="promo__content">
-                <h1 class="promo__heading">THE BRAND</h1>
-                <p class="promo__text">OF LUXERIOUS <span class="promo__text_color">FASHION</span></p>
-            </div>
-        </article>
-    </section>
-    <div class="catalog center">
-        <figure class="catalog__item">
-            <img class="catalog__img" src="img/catalog_woman.png" alt="">
-            <div class="catalog_content">
-                <p class="catalog_text">30% OFF</p>
-                <h3 class="catalog_heading">FOR WOMEN</h3>
-            </div>
-        </figure>
-        <figure class="catalog__item">
-            <img class="catalog__img" src="img/catalog_man.png" alt="">
-            <div class="catalog_content">
-                <p class="catalog_text">HOT DEAL</p>
-                <h3 class="catalog_heading">FOR MEN</h3>
-            </div>
-        </figure>
-        <figure class="catalog__item">
-            <img class="catalog__img" src="img/catalog_kids.png" alt="">
-            <div class="catalog_content">
-                <p class="catalog_text">NEW ARRIVALS</p>
-                <h3 class="catalog_heading">FOR KIDS</h3>
-            </div>
-        </figure>
+    <div class="navigation">
+        <nav class="navigation_content center">
+            <h1 class="heading_navigation">NEW ARRIVALS </h1>
+            <ul class="navigation_catalog">
+                <li><a class="navigation_catalog_link" href="index.html">HOME</a></li>
+                <p class="navigation_catalog_link_mini">/</p>
+                <li><a class="navigation_catalog_link" href="#">MEN</a></li>
+                <p class="navigation_catalog_link_mini">/</p>
+                <li><a class="navigation_catalog_link" href="#">NEW ARRIVALS</a></li>
+            </ul>
+        </nav>
     </div>
-    <figure class="catalog__trend center">
-        <img class="trend_img" src="img/trend.png" alt="trend">
-        <div class="catalog_content">
-            <p class="catalog_text">LUXIROUS & TRENDY</p>
-            <h3 class="catalog_heading">ACCESORIES</h3>
+    <nav class="navigation_featured center">
+        <div class="navigation_filter">
+            <div class="navigation_filter_left">
+                <div class="navigation_menu">
+                    <a href="#"><h3 class="heading_filter">FILTER</h3></a>
+                <a href="#"><img src="img/filter.svg" alt=""></a>
+                </div>
+                <div class="filter_menu">
+                    <ul class="filter_menu_ul">
+                        <li class="list_heading">CATEGORY</li>
+                        <ul class="filter_menu_ul">
+                            <li class="filter_menu_text">Accessories</li>
+                            <li class="filter_menu_text">Bags</li>
+                            <li class="filter_menu_text">Denim</li>
+                            <li class="filter_menu_text">Hoodies & Sweatshirts</li>
+                            <li class="filter_menu_text">Jackets & Coats</li>
+                            <li class="filter_menu_text">Polos</li>
+                            <li class="filter_menu_text">Shirts</li>
+                            <li class="filter_menu_text">Shoes</li>
+                            <li class="filter_menu_text">Sweaters & Knits</li>
+                            <li class="filter_menu_text">T-Shirts</li>
+                            <li class="filter_menu_text">Tanks</li>
+                        </ul>
+                        <li class="list_heading">BRAND</li>
+                        <li class="list_heading">DESIGNER</li>
+                    </ul class="filter_menu_ul">
+                </div>
+            </div>
+            <div class="size">
+                <h3 class="heading_filter_center heading_filter_margin">TRENDING NOW</h3>
+                <a href="#"><img class="vector_svg" src="img/Vector.svg" alt=""></a>
+            </div>
+            <div class="size">
+                <h3 class="heading_filter_center">SIZE </h3>
+                <a href="#"><img class="vector_svg" src="img/Vector.svg" alt=""></a>
+                <form class="form" action="">
+                    <div class="form_input">
+                        <input type="checkbox" name="" id="">
+                    <p class="size_text">XS</p>
+                    </div>
+                    <div class="form_input">
+                        <input type="checkbox" name="" id="">
+                    <p class="size_text">S</p>
+                    </div>
+                    <div class="form_input">
+                        <input type="checkbox" name="" id="">
+                    <p class="size_text">M</p>
+                    </div>
+                    <div class="form_input">
+                        <input type="checkbox" name="" id="">
+                    <p class="size_text">L</p>
+                    </div>
+
+                </form>
+            </div>
+            <div class="size">
+                <h3 class="heading_filter_center heading_filter_margin">PRICE</h3>
+                <a href="#"><img class="vector_svg" src="img/Vector.svg" alt=""></a>
+            </div>
         </div>
-    </figure>
-    <section class="fetured__text center">
-        <h2 class="fetured_heading">Fetured Items</h2>
-        <p class="fetured_text">Shop for items based on what we featured in this week</p>
-    </section>
+    </nav>
     <div class="fetured__content center">
         <figure class="fetured__item">
             <a href="#">
-                <img class="fetured__img" src="img/fetured_img1.png" alt="">
+                <img class="fetured__img" src="img/fetured_img1.jpg" alt="">
             </a>
             <a class="cart_add" href="#">
                 <img src="img/cart_hover.svg" alt="cart">
@@ -124,7 +125,7 @@
         </figure>
         <figure class="fetured__item">
             <a href="#">
-                <img class="fetured__img" src="img/fetured_img2.png" alt="">
+                <img class="fetured__img" src="img/fetured_img2.jpg" alt="">
             </a>
             <div class="fetured_content">
                 <a href="#">
@@ -141,7 +142,7 @@
         </figure>
         <figure class="fetured__item">
             <a href="#">
-                <img class="fetured__img" src="img/fetured_img3.png" alt="">
+                <img class="fetured__img" src="img/fetured_img3.jpg" alt="">
             </a>
             <div class="fetured_content">
                 <a href="#">
@@ -158,7 +159,7 @@
         </figure>
         <figure class="fetured__item">
             <a href="#">
-                <img class="fetured__img" src="img/fetured_img4.png" alt="">
+                <img class="fetured__img" src="img/fetured_img4.jpg" alt="">
             </a>
             <div class="fetured_content">
                 <a href="#">
@@ -175,7 +176,7 @@
         </figure>
         <figure class="fetured__item">
             <a href="#">
-                <img class="fetured__img" src="img/fetured_img5.png" alt="">
+                <img class="fetured__img" src="img/fetured_img5.jpg" alt="">
             </a>
             <div class="fetured_content">
                 <a href="#">
@@ -192,7 +193,58 @@
         </figure>
         <figure class="fetured__item">
             <a href="#">
-                <img class="fetured__img" src="img/fetured_img6.png" alt="">
+                <img class="fetured__img" src="img/fetured_img6.jpg" alt="">
+            </a>
+            <div class="fetured_content">
+                <a href="#">
+                    <h4 class="fetured_heading_img">ELLERY X M'O CAPSULE</h4>
+                </a>
+                <a class="cart_add" href="#">
+                    <img src="img/cart_hover.svg" alt="cart">
+                    <p class="text_hover">Add to Cart</p>
+                </a>
+                <p class="fetured_text text_img">Known for her sculptural takes on traditional tailoring, Australian
+                    arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <p class="fetured_text_price">$52.00</p>
+            </div>
+        </figure>
+        <figure class="fetured__item">
+            <a href="#">
+                <img class="fetured__img" src="img/fetured_img7.jpg" alt="">
+            </a>
+            <div class="fetured_content">
+                <a href="#">
+                    <h4 class="fetured_heading_img">ELLERY X M'O CAPSULE</h4>
+                </a>
+                <a class="cart_add" href="#">
+                    <img src="img/cart_hover.svg" alt="cart">
+                    <p class="text_hover">Add to Cart</p>
+                </a>
+                <p class="fetured_text text_img">Known for her sculptural takes on traditional tailoring, Australian
+                    arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <p class="fetured_text_price">$52.00</p>
+            </div>
+        </figure>
+        <figure class="fetured__item">
+            <a href="#">
+                <img class="fetured__img" src="img/fetured_img8.jpg" alt="">
+            </a>
+            <div class="fetured_content">
+                <a href="#">
+                    <h4 class="fetured_heading_img">ELLERY X M'O CAPSULE</h4>
+                </a>
+                <a class="cart_add" href="#">
+                    <img src="img/cart_hover.svg" alt="cart">
+                    <p class="text_hover">Add to Cart</p>
+                </a>
+                <p class="fetured_text text_img">Known for her sculptural takes on traditional tailoring, Australian
+                    arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <p class="fetured_text_price">$52.00</p>
+            </div>
+        </figure>
+        <figure class="fetured__item">
+            <a href="#">
+                <img class="fetured__img" src="img/fetured_img9.jpg" alt="">
             </a>
             <div class="fetured_content">
                 <a href="#">
@@ -208,8 +260,18 @@
             </div>
         </figure>
     </div>
-    <div class="container_button">
-        <a class="button" href="#">Browse All Product</a>
+    <div class="container_list">
+        <div class="list">
+            <a href="#"><img src="img/Vector_list.svg" alt=""></a>
+            <a href="#"><p class="list_text">1</p></a>
+            <a href="#"><p class="list_text">2</p></a>
+            <a href="#"><p class="list_text">3</p></a>
+            <a href="#"><p class="list_text">4</p></a>
+            <a href="#"><p class="list_text">5</p></a>
+            <a href="#"><p class="list_text">6</p></a>
+            <a href="#"><p class="list_text">20</p></a>
+            <a href="#"><img src="img/Vector_list1.svg" alt=""></a>
+        </div>
     </div>
     <footer class="footer">
         <div class="footer_top center">
