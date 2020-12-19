@@ -1,0 +1,86 @@
+.registration_info
+    display: flex
+    margin-top: 64px
+    justify-content: space-between
+.registration
+    display: flex
+    flex-direction: column
+    &__gender
+        display: flex
+    &__heading
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        color: #222222
+        margin-bottom: 20px
+    &__text
+        font-weight: 300
+        font-size: 13px
+        line-height: 16px
+        color: #B1B1B1
+        &_margin
+            margin-top: 15px
+            width: 359px
+        &_radio
+            font-weight: 300
+            font-size: 11px
+            line-height: 13px
+            color: #000000
+            margin-right: 20px
+    &__input
+        width: 360px
+        height: 45px
+        border: 1px solid #A4A4A4
+        padding-left: 17px
+        &_margin
+            margin-bottom: 20px
+        &:focus
+            outline: none
+        &::placeholder
+            font-weight: 300
+            font-size: 13px
+            line-height: 16px
+            color: #B1B1B1
+        &:focus::placeholder
+            text-indent: 500px
+            transition: text-indent 0.7s ease
+    &__radio
+        border: 1px solid #A4A4A4
+        margin-top: 31px
+        margin-bottom: 33px
+        margin-right: 10px
+    &__button
+        width: 167px
+        height: 50px
+        background: $colorBrightness
+        margin-top: 39px
+        display: flex
+        justify-content: center
+        align-items: center
+        &_text
+            font-size: 14px
+            line-height: 17px
+            color: #FFFFFF
+            margin-right: 20px
+        &:hover
+            background: $colorBrightness - #111
+
+.loyalty
+    &__text
+        font-weight: 300
+        font-size: 24px
+        line-height: 29px
+        color: #000000
+        &_heading
+            margin-bottom: 22px
+        &_main
+            margin-bottom: 21px
+            width: 652px
+        &_img
+            
+    &__list
+        margin-bottom: 16px
+        &::before
+            content: url(img/loyalty.svg)
+            margin-right: 23px
+
