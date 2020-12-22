@@ -8,6 +8,10 @@
         z-index: 1
         background: #FFFFFF
 
+.center_product
+    padding-left: calc(50% - 570px)
+    padding-right: calc(50% - 570px)
+
 .product
     background-color: #F7F7F7
     display: flex
@@ -101,3 +105,29 @@
 
 .footer_product
     margin-top: 128px
+
+.fetured__content_product
+    margin-top: 48px
+    margin-bottom: 48px
+    display: flex
+    flex-wrap: wrap
+    gap: 30px
+
+
+@media(max-width: 1024px)
+    .fetured__content_product
+        gap: 16px
+
+
+@media(max-width: 667px)
+    .product_img_mini
+        width: 374px
+    .purchase_hr_long
+        width: 174px
+    .product_text
+        max-width: 326px
+    .fetured__content_product
+        margin-left: 8px
+        margin-right: 8px
+    .footer_product
+        margin-top: 64px

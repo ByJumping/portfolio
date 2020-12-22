@@ -2,6 +2,9 @@
     display: flex
     margin-top: 64px
     justify-content: space-between
+.center_registration
+    padding-left: calc(50% - 570px)
+    padding-right: calc(50% - 570px)
 .registration
     display: flex
     flex-direction: column
@@ -77,10 +80,38 @@
             margin-bottom: 21px
             width: 652px
         &_img
-            
+
     &__list
         margin-bottom: 16px
         &::before
             content: url(img/loyalty.svg)
             margin-right: 23px
 
+@media(max-width: 1024px)
+    .registration_info
+        margin-top: 40px
+    .loyalty__text_heading
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        margin-bottom: 32px
+    .loyalty__text
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+    .loyalty__text_main
+        width: 354px
+    .registration
+        margin-right: 23px
+    .center_registration
+        padding-right: 17px
+        padding-left: 17px
+
+@media(max-width: 667px)
+    .registration_info
+        flex-direction: column
+        padding-left: 9px
+    .registration
+        margin-bottom: 40px
+    .footer_registration
+        margin-top: 100px

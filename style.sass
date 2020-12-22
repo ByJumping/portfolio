@@ -163,8 +163,9 @@ summary:focus
     flex-basis: 66.6666%
     padding-left: 16px
 
-.size
+.size:not(:last-child)
     margin-right: 28px
+.size
     position: relative
 
 .form
@@ -343,6 +344,13 @@ summary:focus
     color: #9F9F9F
 
 .fetured__content
+    margin-top: 48px
+    margin-bottom: 48px
+    display: flex
+    flex-wrap: wrap
+    gap: 30px
+
+.fetured__content_catalog
     margin-top: 48px
     margin-bottom: 48px
     display: flex
@@ -611,6 +619,15 @@ summary:focus
         line-height: 28px
     .promo__right
         padding-left: 40px
+    .fetured__content_catalog
+        margin-top: 40px
+        margin-bottom: 40px
+        gap: 16px
+    .navigation_featured
+        margin-top: 8px
+        margin-bottom: 0
+    .filter_right
+        flex-basis: 43%
     .catalog
         padding-top: 20px
     .catalog__item:not(:last-child)
@@ -621,6 +638,8 @@ summary:focus
         margin-right: calc(50% - 368px)
         height: 116px
         background-size: cover
+    .fetured__item_none
+        display: none
     .fetured__text
         margin-top: 154px
     .fetured__content
@@ -668,6 +687,26 @@ summary:focus
     .promo__text
         font-size: 20px
         line-height: 24px
+    .filter_max
+        width: 37px
+        height: 25px
+    .navigation_filter
+        align-items: center
+    .navigation_content
+        flex-direction: column
+        padding-top: 24px
+        padding-bottom: 46px
+    .heading_navigation
+        margin-bottom: 32px
+    .heading_filter_none
+        display: none
+    .heading_filter_center
+        font-size: 12px
+        line-height: 14px
+    .filter_right
+        flex-basis: 77%
+    .size:not(:last-child)
+        margin-right: 24px
     .catalog
         padding-top: 64px
         flex-direction: column
@@ -693,6 +732,12 @@ summary:focus
         flex-direction: column
         margin-left: 8px
         margin-right: 8px
+    .fetured__content_catalog
+        margin-top: 32px
+        margin-bottom: 41px
+        flex-direction: column
+        margin-left: 8px
+        margin-right: 8px
     .footer_advantages:not(:last-child)
         margin-bottom: 46px
     .footer_subscribe_text
@@ -707,3 +752,4 @@ summary:focus
     .footer_feedback_text
         font-size: 18px
         line-height: 22px
+        max-width: 343px
