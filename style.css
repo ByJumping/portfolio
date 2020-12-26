@@ -34,6 +34,13 @@ summary:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+}
+
+.header__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header__search {
@@ -230,6 +237,87 @@ summary:focus {
   padding: 8px 30px 8px 8px;
 }
 
+#switcher {
+  visibility: hidden;
+  position: absolute;
+  left: -9999px;
+}
+
+#switcher:checked ~ .drop {
+  visibility: visible;
+  opacity: 1;
+}
+
+.drop {
+  background: #FFFFFF;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  padding: 37px 32px;
+  position: absolute;
+  top: 75px;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  width: 232px;
+  height: 764px;
+  transition: opacity .4s;
+  z-index: 1;
+}
+
+.drop__menu {
+  margin-bottom: 37px;
+  display: none;
+  justify-content: space-around;
+}
+
+.drop__box {
+  margin-top: 20px;
+}
+
+.drop__name {
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.drop__heading {
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+}
+
+.drop__heading:hover {
+  text-decoration: underline;
+}
+
+.drop__ul {
+  list-style-type: none;
+  padding-left: 20px;
+  margin-top: 12px;
+}
+
+.drop__link {
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+  margin-bottom: 11px;
+  display: block;
+}
+
+.drop__link:hover {
+  color: #F16D7F;
+}
+
+.close_menu {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  transition: .3s;
+}
+
+.close_menu:hover {
+  transform: rotate(45deg);
+}
+
 .promo {
   padding-left: calc(50% - 800px);
   padding-right: calc(50% - 800px);
@@ -307,10 +395,6 @@ summary:focus {
 
 .menu {
   display: inline-block;
-}
-
-.menu:hover .submenu {
-  display: block;
 }
 
 .submenu_headind {
@@ -866,10 +950,6 @@ summary:focus {
   .footer_product {
     margin-top: 64px;
   }
-}
-
-* {
-  transition-duration: 0.3s;
 }
 
 .cart {
@@ -1480,6 +1560,12 @@ input::-webkit-inner-spin-button {
 }
 
 @media (max-width: 667px) {
+  .drop {
+    width: 100%;
+  }
+  .drop__menu {
+    display: flex;
+  }
   .header {
     padding-left: 16px;
     padding-right: 16px;

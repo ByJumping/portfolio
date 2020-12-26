@@ -29,6 +29,10 @@ summary:focus
     display: flex
     justify-content: space-between
     align-items: center
+    position: relative
+
+    &__right
+        +flexCenter()
 
     &__search
         margin-left: 41px
@@ -191,6 +195,64 @@ summary:focus
     flex-direction: column
     padding: 8px 30px 8px 8px
 
+#switcher
+    visibility: hidden
+    position: absolute
+    left: -9999px
+    &:checked ~ .drop
+        visibility: visible
+        opacity: 1
+
+.drop
+    background: #FFFFFF
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+    padding: 37px 32px
+    position: absolute
+    top: 75px
+    right: 0
+    opacity: 0
+    visibility: hidden
+    width: $widthMenu
+    height: 764px
+    transition: opacity .4s
+    z-index: 1
+    &__menu
+        margin-bottom: 37px
+        display: none
+        justify-content: space-around
+    &__box
+        margin-top: 20px
+    &__name
+        font-size: 14px
+        line-height: 17px
+        color: #000000
+    &__heading
+        font-size: 14px
+        line-height: 17px
+        color: $colorBrightness
+        &:hover
+            text-decoration: underline
+    &__ul
+        list-style-type: none
+        padding-left: 20px
+        margin-top: 12px
+    &__link
+        font-size: 14px
+        line-height: 17px
+        color: #6F6E6E
+        margin-bottom: 11px
+        display: block
+        &:hover
+            color: $colorBrightness
+
+.close_menu
+    position: absolute
+    right: 16px
+    top: 16px
+    transition: .3s
+    &:hover
+        transform: rotate(45deg)
+
 .promo
     padding-left: calc(50% - 800px)
     padding-right: calc(50% - 800px)
@@ -256,9 +318,6 @@ summary:focus
 
 .menu
     display: inline-block
-
-    &:hover .submenu
-        display: block
 
 .submenu_headind
     font-size: 14px
@@ -671,6 +730,10 @@ summary:focus
         padding-right: 32px
 
 @media( max-width: 667px)
+    .drop
+        width: 100%
+        &__menu
+            display: flex
     .header
         padding-left: 16px
         padding-right: 16px
@@ -753,3 +816,5 @@ summary:focus
         font-size: 18px
         line-height: 22px
         max-width: 343px
+
+@import media
