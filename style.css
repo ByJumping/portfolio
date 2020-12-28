@@ -1559,6 +1559,13 @@ input::-webkit-inner-spin-button {
   }
 }
 
+@media (max-width: 752px) {
+  .center {
+    padding-left: calc(50% - 217px);
+    padding-right: calc(50% - 217px);
+  }
+}
+
 @media (max-width: 667px) {
   .drop {
     width: 100%;
