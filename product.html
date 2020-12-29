@@ -19,7 +19,7 @@
             <a href="#"><img class="header__search" src="img/search.svg" alt="search"></a>
         </div>
         <nav class="header__right">
-            <input type="checkbox" name="" id="switcher">
+            <input type="checkbox" name="switch" id="switcher">
             <label for="switcher"><img src="img/menu.svg" alt="menu"></label>
             <nav class="drop">
                 <div class="drop__menu">
@@ -80,19 +80,19 @@
         </div>
         </nav>
     </header>
-    <div class="navigation">
+    <nav class="navigation">
         <nav class="navigation_content center">
-            <h1 class="heading_navigation">NEW ARRIVALS </h1>
+            <h2 class="heading_navigation">NEW ARRIVALS </h2>
             <ul class="navigation_catalog">
                 <li><a class="navigation_catalog_link" href="index.html">HOME</a></li>
-                <p class="navigation_catalog_link_mini">/</p>
+                <li class="navigation_catalog_link_mini">/</li>
                 <li><a class="navigation_catalog_link" href="#">MEN</a></li>
-                <p class="navigation_catalog_link_mini">/</p>
+                <li class="navigation_catalog_link_mini">/</li>
                 <li><a class="navigation_catalog_link" href="#">NEW ARRIVALS</a></li>
             </ul>
         </nav>
-    </div>
-    <section class="product">
+    </nav>
+    <div class="product">
         <a class="product__swipe product__swipe_left" href="#">
             <svg width="13" height="23" viewBox="0 0 13 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path class="product__swipe_color" d="M12.6998 3.7499L4.9498 11.4999L12.6998 19.2499L11.1498 22.3499L0.299805 11.4999L11.1498 0.649902L12.6998 3.7499Z" fill="black"/>
@@ -106,7 +106,7 @@
         <div class="product_img">
             <img class="product_img_mini" src="img/Layer.png" alt="product">
         </div>
-    </section>
+    </div>
     <section class="purchase center_product">
         <div class="purchase_container">
         <div class="product_description">
@@ -126,12 +126,12 @@
                 <details>
                     <summary class="heading_filter_center">CHOOSE COLOR<img class="vector_svg" src="img/Vector.svg"
                             alt=""> </summary>
-                    <form class="form" action="">
+                    <form class="form" action="#">
                         <div class="form_input">
-                            <label class="size_text"><input class="input_stile" type="checkbox" name="" id="">XS</label>
-                            <label class="size_text"><input class="input_stile" type="checkbox" name="" id="">S</label>
-                            <label class="size_text"><input class="input_stile" type="checkbox" name="" id="">L</label>
-                            <label class="size_text"><input class="input_stile" type="checkbox" name="" id="">XL</label>
+                            <label class="size_text"><input class="input_stile" type="checkbox" name="checkbox">XS</label>
+                            <label class="size_text"><input class="input_stile" type="checkbox" name="checkbox">S</label>
+                            <label class="size_text"><input class="input_stile" type="checkbox" name="checkbox">L</label>
+                            <label class="size_text"><input class="input_stile" type="checkbox" name="ch">XL</label>
                         </div>
                     </form>
                 </details>
@@ -141,12 +141,12 @@
                     <summary class="heading_filter_center">CHOOSE SIZE<img class="vector_svg" src="img/Vector.svg"
                             alt="">
                     </summary>
-                    <form class="form" action="">
+                    <form class="form" action="#">
                         <div class="form_input">
-                            <label class="size_text"><input class="input_stile" type="checkbox" name="" id="">XS</label>
-                            <label class="size_text"><input class="input_stile" type="checkbox" name="" id="">S</label>
-                            <label class="size_text"><input class="input_stile" type="checkbox" name="" id="">L</label>
-                            <label class="size_text"><input class="input_stile" type="checkbox" name="" id="">XL</label>
+                            <label class="size_text"><input class="input_stile" type="checkbox" name="checkbox">XS</label>
+                            <label class="size_text"><input class="input_stile" type="checkbox" name="checkbox">S</label>
+                            <label class="size_text"><input class="input_stile" type="checkbox" name="checkbox">L</label>
+                            <label class="size_text"><input class="input_stile" type="checkbox" name="checkbox">XL</label>
                         </div>
                     </form>
                 </details>
@@ -155,12 +155,12 @@
                 <details>
                     <summary class="heading_filter_center">QUANTITY<img class="vector_svg" src="img/Vector.svg" alt="">
                     </summary>
-                    <form class="form" action="">
+                    <form class="form" action="#">
                         <div class="form_input">
-                            <label class="size_text"><input class="input_stile" type="checkbox" name="" id="">XS</label>
-                            <label class="size_text"><input class="input_stile" type="checkbox" name="" id="">S</label>
-                            <label class="size_text"><input class="input_stile" type="checkbox" name="" id="">L</label>
-                            <label class="size_text"><input class="input_stile" type="checkbox" name="" id="">XL</label>
+                            <label class="size_text"><input class="input_stile" type="checkbox" name="checkbox">XS</label>
+                            <label class="size_text"><input class="input_stile" type="checkbox" name="checkbox">S</label>
+                            <label class="size_text"><input class="input_stile" type="checkbox" name="checkbox">L</label>
+                            <label class="size_text"><input class="input_stile" type="checkbox" name="checkbox">XL</label>
                         </div>
                     </form>
                 </details>
@@ -176,7 +176,7 @@
         </div>
     </div>
     </section>
-    <div class="fetured__content_product center">
+    <section class="fetured__content_product center">
         <figure class="fetured__item">
             <a href="#">
                 <img class="fetured__img" src="img/fetured_img1.jpg" alt="">
@@ -228,7 +228,7 @@
                 <p class="fetured_text_price">$52.00</p>
             </div>
         </figure>
-    </div>
+    </section>
     <footer class="footer footer_product">
         <div class="footer_center center">
             <figure class="footer_feedback">
@@ -240,7 +240,7 @@
                 <h3 class="footer_subscribe_heading">SUBSCRIBE </h3>
                 <p class="footer_subscribe_text">FOR OUR NEWLETTER AND PROMOTION</p>
                 <div class="form_button">
-                    <input required class="entry_fild" placeholder="Enter Your Email" type="email" name="" id="">
+                    <input required class="entry_fild" placeholder="Enter Your Email" type="email" name="email">
                     <input class="footer_button" type="submit" value="Subscribe">
                 </div>
             </form>

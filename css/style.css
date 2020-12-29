@@ -185,11 +185,14 @@ summary:focus {
   line-height: 17px;
   color: #6F6E6E;
   margin-left: 34px;
-  margin-bottom: 11px;
 }
 
 .filter_menu_text:hover {
   color: #F16D7F;
+}
+
+.filter_menu_li {
+  margin-bottom: 11px;
 }
 
 .list_heading:hover {
@@ -1143,6 +1146,7 @@ input::-webkit-inner-spin-button {
   line-height: 16px;
   color: #222222;
   padding-left: 17px;
+  padding-right: 17px;
 }
 
 .quate__form::placeholder {
@@ -1399,6 +1403,7 @@ input::-webkit-inner-spin-button {
   height: 45px;
   border: 1px solid #A4A4A4;
   padding-left: 17px;
+  padding-right: 17px;
 }
 
 .registration__input_margin {

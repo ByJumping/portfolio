@@ -19,7 +19,7 @@
             <a href="#"><img class="header__search" src="img/search.svg" alt="search"></a>
         </div>
         <nav class="header__right">
-            <input type="checkbox" name="" id="switcher">
+            <input type="checkbox" name="switch" id="switcher">
             <label for="switcher"><img src="img/menu.svg" alt="menu"></label>
             <nav class="drop">
                 <div class="drop__menu">
@@ -80,28 +80,26 @@
         </div>
         </nav>
     </header>
-    <div class="navigation">
+    <nav class="navigation">
         <nav class="navigation_content center">
-            <h1 class="heading_navigation">REGISTRATION</h1>
+            <h2 class="heading_navigation">REGISTRATION</h2>
         </nav>
-    </div>
+    </nav>
     <section class="registration_info center_registration">
-        <form class="registration" action="">
+        <form class="registration" action="#">
             <h3 class="registration__heading">Your Name</h3>
-            <input class="registration__input registration__input_margin" type="text" name="" id=""
+            <input class="registration__input registration__input_margin" type="text" name="name"
                 placeholder="First Name">
-            <input class="registration__input" type="text" name="" id="" placeholder="Last Name">
+            <input class="registration__input" type="text" name="name" placeholder="Last Name">
             <div class="registration__gender">
-                <p class="registration__text_radio"><input class="registration__radio" type="radio" name="Male"
-                        id="">Male</p>
-                <p class="registration__text_radio"><input class="registration__radio" type="radio" name="Male"
-                        id="">Female</p>
+                <p class="registration__text_radio"><input class="registration__radio" type="radio" name="Male">Male</p>
+                <p class="registration__text_radio"><input class="registration__radio" type="radio" name="Male">Female</p>
             </div>
 
             <h3 class="registration__heading">Login details</h3>
-            <input class="registration__input registration__input_margin" type="email" name="" id=""
+            <input class="registration__input registration__input_margin" type="email" name="email"
                 placeholder="Email">
-            <input class="registration__input" type="password" name="" id="" placeholder="Password">
+            <input class="registration__input" type="password" name="password" placeholder="Password">
             <p class="registration__text registration__text_margin">Please use 8 or more characters, with at least 1
                 number and a mixture of
                 uppercase and lowercase letters</p>
@@ -137,7 +135,7 @@
                 <h3 class="footer_subscribe_heading">SUBSCRIBE </h3>
                 <p class="footer_subscribe_text">FOR OUR NEWLETTER AND PROMOTION</p>
                 <div class="form_button">
-                    <input required class="entry_fild" placeholder="Enter Your Email" type="email" name="" id="">
+                    <input required class="entry_fild" placeholder="Enter Your Email" type="email" name="email">
                     <input class="footer_button" type="submit" value="Subscribe">
                 </div>
             </form>
