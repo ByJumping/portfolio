@@ -155,13 +155,14 @@ summary:focus
     color: #6F6E6E
     margin-left: 34px
     margin-bottom: 11px
+    &:hover
+        color: $colorBrightness
 
 .list_heading:hover
     color: #EF5B70
 
 .filter_menu_ul
     list-style: none
-
 .filter_right
     display: flex
     flex-basis: 66.6666%
@@ -249,7 +250,7 @@ summary:focus
     position: absolute
     right: 16px
     top: 16px
-    transition: .3s
+    transition: transform .3s
     &:hover
         transform: rotate(45deg)
 
@@ -380,7 +381,7 @@ summary:focus
     &__trend
         margin-top: 30px
         position: relative
-        background-image: url(img/trend.png)
+        background-image: url(../img/trend.png)
         background-position: center
         background-repeat: no-repeat
         height: 180px
@@ -420,12 +421,13 @@ summary:focus
     background: #F8F8F8
     flex-basis: 360px
     position: relative
-    transition: 0.4s
+    transition: 0.2s
     &:hover
-        transform: scale(1.05)
+        transform: scale(1.018)
 
 .fetured__img
     width: 100%
+    transition: 0.3s
 
     .fetured__item:hover &
         filter: brightness(50%)
@@ -541,7 +543,7 @@ summary:focus
         justify-content: center
 
     &_center
-        background-image: url(img/back_footer.png)
+        background-image: url(../img/back_footer.png)
         background-repeat: no-repeat
         background-size: cover
         display: flex
@@ -639,6 +641,7 @@ summary:focus
     width: 32px
     height: 32px
     color: black
+    transition: 0.3s
 
     &:hover
         background: $colorBrightness

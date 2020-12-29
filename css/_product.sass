@@ -17,6 +17,25 @@
     display: flex
     justify-content: center
     padding-bottom: 50px
+    position: relative
+
+    &__swipe
+        width: 47px
+        height: 47px
+        background: rgba(42, 42, 42, 0.15)
+        +flexCenter()
+        position: absolute
+        transition: 0.3s
+        &:hover .product__swipe_color
+            fill: $colorBrightness
+        &_left
+            left: 0
+            top: 40%
+        &_right
+            right: 0
+            top: 40%
+        &_color
+            transition: 0.2s
 
     &_description
         text-align: center
@@ -84,12 +103,16 @@
     display: flex
     justify-content: center
     align-items: center
+    transition: 0.3s
+    &_svg
+        transition: 0.3s
 
 .text_hover_product
     font-size: 16px
     line-height: 19px
     color: #F26376
     margin-left: 23px
+    transition: 0.3s
 
 .purchase_button
     margin-bottom: 65px
