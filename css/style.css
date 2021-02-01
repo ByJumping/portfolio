@@ -267,7 +267,7 @@ summary:focus {
   width: 232px;
   height: 764px;
   transition: opacity .4s;
-  z-index: 1;
+  z-index: 3;
 }
 
 .drop__menu {
@@ -693,10 +693,13 @@ summary:focus {
   width: 360px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .footer_img {
   margin-bottom: 30px;
+  width: 96px;
+  height: 96px;
 }
 
 .footer_subscribe {
