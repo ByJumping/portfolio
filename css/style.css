@@ -508,9 +508,12 @@ summary:focus {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  justify-content: center;
+  align-items: center;
 }
 
 .fetured__content_catalog {
+  justify-content: center;
   margin-top: 48px;
   margin-bottom: 48px;
   display: flex;
@@ -636,7 +639,6 @@ summary:focus {
   padding-top: 104px;
   padding-bottom: 104px;
   display: flex;
-  flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -970,7 +972,6 @@ summary:focus {
   margin-top: 48px;
   margin-bottom: 48px;
   display: flex;
-  flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -993,7 +994,9 @@ summary:focus {
   .fetured__content_product {
     margin-left: 8px;
     margin-right: 8px;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
   .footer_product {
     margin-top: 64px;
@@ -1554,9 +1557,6 @@ input::-webkit-inner-spin-button {
     margin-top: 8px;
     margin-bottom: 0;
   }
-  .filter_right {
-    flex-basis: 43%;
-  }
   .catalog {
     padding-top: 20px;
   }
@@ -1610,6 +1610,13 @@ input::-webkit-inner-spin-button {
     padding-bottom: 23px;
     padding-left: 32px;
     padding-right: 32px;
+  }
+}
+
+@media (max-width: 739px) {
+  .catalog__trend {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -1698,14 +1705,12 @@ input::-webkit-inner-spin-button {
   .fetured__content {
     margin-top: 64px;
     margin-bottom: 41px;
-    flex-direction: column;
     margin-left: 8px;
     margin-right: 8px;
   }
   .fetured__content_catalog {
     margin-top: 32px;
     margin-bottom: 41px;
-    flex-direction: column;
     margin-left: 8px;
     margin-right: 8px;
   }
